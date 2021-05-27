@@ -1,0 +1,53 @@
+.modal {
+  @include fixed(0, 0, 0, 0);
+  z-index: 1050;
+  display: none;
+  @include sizeBlock(100%, 100%);
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, .5);
+
+  &-dialog {
+    max-width: rem(500);
+    margin: rem(40) auto;
+  }
+
+  &-content {
+    position: relative;
+    width: 100%;
+    background-color: $white;
+    border: rem(1) solid rgba(0, 0, 0, .2);
+    border-radius: rem(4);
+    max-height: 80vh;
+    overflow-y: auto;
+
+    .close {
+      @include absolute(rem(10), rem(14), null, null);
+      font-size: rem(30);
+      color: #000;
+      opacity: .5;
+      font-weight: 700;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+
+      & span {
+        padding-left: rem(5);
+        padding-right: rem(5);
+      }
+    }
+  }
+
+  &-header, &-body {
+    padding: rem(15);
+    border-bottom: rem(1) solid #dee2e6;
+  }
+
+  &-title {
+    font-weight: 500;
+    font-size: rem(20);
+  }
+
+  &-footer {
+    padding: rem(15);
+  }
+}

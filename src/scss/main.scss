@@ -1,0 +1,20 @@
+@import 'general/variables.scss';
+@import 'general/mixins.scss';
+@import 'general/functions.scss';
+@import 'general/smart-grid.scss';
+@import 'general/fonts.scss';
+@import 'general/base.scss';
+
+
+
+
+
+// Компоненты
+// кнопка
+@import 'components/ui';
+@import "helpers/classes";
+
+// Страницы
+//@import 'pages/content';
+@import 'pages/practice';
+

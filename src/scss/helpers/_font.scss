@@ -1,0 +1,41 @@
+.fz-16 {
+  font-size: rem(16);
+}
+.fz-20 {
+  font-size: rem(20);
+}
+.fz-24 {
+  font-size: rem(24);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.thin {
+  font-weight: 300;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.text-color-primary {
+  color: $primary
+}
+
+.text-color-success {
+  color: $success
+}
+
+.text-color-danger {
+  color: $danger
+}
+
+.text-color-warning {
+  color: $warning
+}
+
+.text-color-dark{
+  color: $dark
+}

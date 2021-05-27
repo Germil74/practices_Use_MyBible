@@ -1,0 +1,37 @@
+.tab {
+  //max-width: rem(700);
+  width: 100%;
+
+  &-panel {
+    display: flex;
+    width: 100%;
+    min-height: rem(50);
+    border: rem(1) solid rgba(0, 0, 0, .2);
+    border-radius: rem(4) rem(4) 0 0;
+  }
+
+  &-item {
+    font-size: rem(18);
+    line-height: rem(27);
+    padding: rem(10) rem(20);
+    border-right: rem(1) solid rgba(0, 0, 0, .2);
+    cursor: pointer;
+
+    &:last-child {
+border-right: none;
+    }
+    &--active {
+      background-color: rgba(0,0,0, .1);
+    }
+  }
+  &-content {
+    display: none;
+    padding: rem(20);
+    border: rem(1) solid rgba(0,0,0, .2);
+    border-top: none;
+    border-radius: 0 0 rem(4) rem(4);
+    &--active {
+      display: block;
+    }
+  }
+}
